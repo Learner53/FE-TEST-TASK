@@ -223,3 +223,186 @@ html, body {
     top: -85px;
   }
 }
+
+
+/* ---------------- Task CSS --------------- */
+.product-color {
+  position: relative;
+}
+#modal-cta {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 9px 14px;
+  border: none;
+  background-color: #eeca87;
+  cursor: pointer;
+  box-shadow: 0 1px 3px #aaa;
+
+}
+#modal-cta:hover {
+  box-shadow: 0 2px 5px #aaa;
+  transition: all 0.1s;
+}
+#modal-cta:active {
+  box-shadow: 0 1px 1px #aaa;
+}
+#modal-container {
+  position: fixed;
+  background-color: rgba(0,0,0,0.53);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#modal-body {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 700px;
+  max-width: 700px;
+  max-height: 500px;
+  min-height: 500px;
+  background-color: #fff;
+  padding: 40px;
+}
+#modal-body  *  {
+  max-height: inherit;
+
+}
+.modal-content {
+  position: relative;
+
+}
+.modal-close-btn {
+  color: #000;
+  font-size: 40px;
+  line-height: 28px;
+  margin: 0;
+  font-weight: bold;
+  position: absolute;
+  right: -35px;
+  top: -35px;
+  cursor: pointer;
+}
+.modal-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-tabs button {
+  width: 100%;
+  padding: 15px  !important;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 0;
+  background-color: #f5f5f5;
+  border: none;
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.modal-tabs button.active-tab {
+  border: 2px solid rgb(144, 147, 48);
+  opacity: 1;
+  cursor:  initial;
+
+}
+.modal-product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.modal-tab-content {
+  position: relative;
+  text-align: center;
+}
+.modal-tab-content .product-color {
+  margin-top: 30px;
+}
+.modal-tab-content button {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  padding: 10px 20px;
+  background-color: #faac71;
+  border: none;
+  box-shadow: 0 2px 4px #aaa;
+  font-weight: bold;
+}
+.modal-tab-content button.select-me-cta {
+  position: static;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.surprise-me-cta {
+  cursor: pointer;
+}
+/* Loader */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; 
+  animation: spin 2s linear infinite;
+
+}
+.loader-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  z-index: 9989;
+}
+.modal-closed, .hide-loader {
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.product-each-colors {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.product-each-colors span{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px #aaa;
+}
+.product-each-colors span:not(:last-child) {
+  margin-right: 10px;
+}
+.product-each-colors .red {
+  background-color: red;
+}
+.product-each-colors .blue {
+  background-color: blue;
+}
+.product-each-colors .black {
+  background-color: black;
+}
+.selected-attribute {
+  background-image: url(images/check-icn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
