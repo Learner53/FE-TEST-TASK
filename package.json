@@ -1,0 +1,17 @@
+{
+  "name": "easysize",
+  "version": "1.0.0",
+  "description": "Simple test task",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node server.js"
+  },
+  "engines": {
+    "node": ">=0.12"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
